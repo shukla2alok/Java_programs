@@ -1,0 +1,19 @@
+import java.util.*;
+class Maximum
+{
+	public static void main(String args[])
+	{
+		Scanner s = new Scanner(System.in);
+		int a, b, c;
+		System.out.print("Enter three numbers a,b,c: ");
+		a = s.nextInt();
+		b = s.nextInt();
+		c = s.nextInt();
+		if(a>b && a>c)
+			System.out.print("a = "+a+" is greatest.");
+		else if(b>c)
+			System.out.print("b = "+b+" is greatest.");
+		else
+			System.out.print("c = "+c+" is greatest.");
+	}
+}
