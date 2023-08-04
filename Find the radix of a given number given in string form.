@@ -1,0 +1,21 @@
+import java.util.*;
+class Findradix
+{
+	public static void main(String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		String str;
+		System.out.print("Enter the string: ");
+		str = s.nextLine();
+		if(str.matches("[0-1]+"))
+			System.out.print("Binary number. Radix = 2.");
+		else if(str.matches("[0-7]+"))
+			System.out.print("Octal number. Radix = 8.");
+		else if(str.matches("[0-9]+"))
+			System.out.print("Decimal number. Radix = 10.");
+		else if(str.matches("[0-9A-F]+"))
+			System.out.print("Hexadecimal number. Radix = 16.");
+		else
+			System.out.print("Not a number");
+	}
+}
